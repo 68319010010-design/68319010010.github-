@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form และ Input Controls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>แบบฟอร์มสมัครสมาชิก</h1>
+
+    <form>
+
+        <!-- Text Box -->
+        <label>ชื่อ-นามสกุล</label>
+        <input type="text" placeholder="จินตนา สมบัติศรี" required minlength="3">
+
+        <!-- Password -->
+        <label>รหัสผ่าน</label>
+        <input type="password" placeholder="อย่างน้อย 8 ตัวอักษร" required minlength="8">
+
+        <!-- Email -->
+        <label>อีเมล</label>
+        <input type="email" placeholder="68319010010@email.com" required>
+
+        <!-- Radio Button -->
+        <label>เพศ</label>
+        <div class="option">
+            <input type="radio" name="gender" required> ชาย
+            <input type="radio" name="gender"> หญิง
+        </div>
+
+        <!-- Checkbox -->
+        <label>ความสนใจ</label>
+        <div class="option">
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript
+        </div>
+
+        <!-- Select -->
+        <label>ระดับการศึกษา</label>
+        <select required>
+            <option value="">-- เลือกระดับการศึกษา --</option>
+            <option>ปวช.</option>
+            <option>ปวส.</option>
+            <option>ปริญญาตรี</option>
+        </select>
+
+        <!-- Textarea -->
+        <label>ความคิดเห็นเพิ่มเติม</label>
+        <textarea rows="4" placeholder="กรอกข้อความ"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">ส่งข้อมูล</button>
+
+    </form>
+</div>
+
+</body>
+</html>
